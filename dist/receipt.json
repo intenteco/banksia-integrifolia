@@ -1,0 +1,210 @@
+{
+  "schema": "intenteco.species-production-receipt/v1",
+  "work_packet": "ECO-WP-08B",
+  "taxon": "banksia-integrifolia",
+  "producer_cli": "C:\\Users\\Hp\\AppData\\Local\\Programs\\Webizen AI Synth\\synth.exe",
+  "quality_profile": "production16",
+  "note": "Produced and strict-reopened via release synth.exe produce + synth.exe preview; actuation.vibe checked via mcp_synth vibe_check and vibe_eval.",
+  "source": {
+    "path": "C:\\github\\eco-intent\\banksia-integrifolia\\source\\banksia-integrifolia.vibe",
+    "bytes": 754602,
+    "sha256": "d9ce5d45e9ad1d574ba29a3a3a1942e7506c430deac5686924647cbbd0cec6f9"
+  },
+  "actuation": {
+    "path": "C:\\github\\eco-intent\\banksia-integrifolia\\source\\actuation.vibe",
+    "bytes": 15380,
+    "sha256": "4e3e9c39cd74182a593271ebd5c051647c8a904a1f12abeb27d06671d0f49f99"
+  },
+  "inputs": [
+    {
+      "key": "taxon.q42",
+      "kind": "q42",
+      "path": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\taxon.q42",
+      "bytes": 35183,
+      "sha256": "c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06"
+    },
+    {
+      "key": "index.q42",
+      "kind": "q42",
+      "path": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\index.q42",
+      "bytes": 8729,
+      "sha256": "fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537"
+    }
+  ],
+  "hmc": {
+    "path": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\banksia-integrifolia.hmc",
+    "bytes": 49286044,
+    "sha256": "47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939"
+  },
+  "strict_reopen_hmc_sha256": "47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939",
+  "strict_replay_verified": true,
+  "resources": [
+    {
+      "key": "bark-albedo.png",
+      "bytes": 49526,
+      "sha256": "aba9bb4156d2ca050f1e62ea88fa9c0ea2f10cf82cdcd5f7a28fb8a77216c0b4"
+    },
+    {
+      "key": "bark-normal.png",
+      "bytes": 59752,
+      "sha256": "d2581922d69ae65295ba07b82637acbed772a14937cc57500213817dff1c3eb6"
+    },
+    {
+      "key": "bark-orm.png",
+      "bytes": 18823,
+      "sha256": "f77df08f1689eff71f137b62b62b26382e15d258dbce71d5ba2c3449b744a2bc"
+    },
+    {
+      "key": "blueprint.svg",
+      "bytes": 89352,
+      "sha256": "fd3cccedc6c7c7863c1992ccc4344c84c1146c1eef72a182a08679920fee200f"
+    },
+    {
+      "key": "banksia-integrifolia-field.emf",
+      "bytes": 1776768,
+      "sha256": "a9bb9f6cac3937c5ca4ed609950477df9b6e88dfda33fe92ac8c116f61b278c2"
+    },
+    {
+      "key": "banksia-integrifolia-pbr.10d",
+      "bytes": 40722544,
+      "sha256": "db7fbd845efe9d6ee477628daf7c9bb85994d5ec7775a66431af429cd1ecc1f2"
+    },
+    {
+      "key": "banksia-integrifolia-substrate.m64",
+      "bytes": 16512,
+      "sha256": "4683814e78f8e0a6787f87ccd357e68a05b8d65fe0106afdb28a51bfabf6893f"
+    },
+    {
+      "key": "banksia-integrifolia.10d",
+      "bytes": 5684208,
+      "sha256": "81fcce6f3a96ed51b613a4b169b663f096965af02015cdde76fab2ee8df49000"
+    },
+    {
+      "key": "spectral-slice.png",
+      "bytes": 3362,
+      "sha256": "5475c8b597ec810c67a2572cf314cd16286014c689af7dfd20adf85633f226bf"
+    },
+    {
+      "key": "turnaround.png",
+      "bytes": 101519,
+      "sha256": "8e4c4c4486273967b2b0212f25c8f8286bf6fa969e7b72f1101aef863e3eefa1"
+    }
+  ],
+  "native_review": {
+    "projection": {
+      "bounds_max": [
+        9.432467460632324,
+        15.756688117980957,
+        7.329585552215576
+      ],
+      "bounds_min": [
+        -7.917491436004639,
+        -3.7997663021087646,
+        -7.9954094886779785
+      ],
+      "camera_aspect": 1.0,
+      "camera_distance": 42.7615852355957,
+      "camera_fit_margin": 1.0800000429153442,
+      "camera_target": [
+        0.7574880123138428,
+        5.978460788726807,
+        -0.33291196823120117
+      ],
+      "colors": "canonical-SurfaceReading",
+      "lighting": {
+        "ambient_intensity": 0.44999998807907104,
+        "clear_color": [
+          0.3400000035762787,
+          0.3400000035762787,
+          0.3400000035762787,
+          1.0
+        ],
+        "direct_intensity": 1.7999999523162842,
+        "environment_additive_fallback_rgb": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sun_direction": [
+          0.40824830532073975,
+          0.8164966106414795,
+          0.40824830532073975
+        ]
+      },
+      "materials": "canonical-MAT1",
+      "normals": "authored",
+      "requested_camera_distance": 42.7615852355957,
+      "screen_space_ao_available": true,
+      "screen_space_ao_radius_m": 0.05000000074505806,
+      "screen_space_ao_samples": 12,
+      "screen_space_ao_strength": 0.75,
+      "shadows_available": true,
+      "tangents": "absent-renderer-derived",
+      "texture_coordinates": "absent",
+      "triangle_count": 282752,
+      "vertex_count": 156350,
+      "vertical_tan_half_fov": 0.4142135679721832
+    },
+    "renderer": "QualiaDB webizen-render::VolumetricRenderer / PortalGpu native offscreen path",
+    "schema": "synth.native-10d-preview/v1",
+    "scope": "native readback PNG projection; not model acceptance or an adapter capability receipt",
+    "source": {
+      "bytes": 5684208,
+      "path": "\\\\?\\C:\\github\\synth\\production\\intenteco-bint-08b-r6\\banksia-integrifolia.10d",
+      "sha256": "81fcce6f3a96ed51b613a4b169b663f096965af02015cdde76fab2ee8df49000"
+    },
+    "textures": {
+      "status": "no HMC supplied; renderer fallback textures may be used"
+    },
+    "views": [
+      {
+        "bytes": 501672,
+        "camera_distance_applied": 42.7615852355957,
+        "camera_distance_requested": 42.7615852355957,
+        "camera_pitch": 0.2800000011920929,
+        "camera_target": [
+          0.7574880123138428,
+          5.978460788726807,
+          -0.33291196823120117
+        ],
+        "camera_yaw": 0.7200000286102295,
+        "file": "three-quarter-view-assumed.png",
+        "height": 2048,
+        "sha256": "26bd390d7047d9bea4ec841bcf9e006705633958448dd4631c4df107e5975802",
+        "width": 2048
+      },
+      {
+        "bytes": 445792,
+        "camera_distance_applied": 42.7615852355957,
+        "camera_distance_requested": 42.7615852355957,
+        "camera_pitch": 0.11999999731779099,
+        "camera_target": [
+          0.7574880123138428,
+          5.978460788726807,
+          -0.33291196823120117
+        ],
+        "camera_yaw": 1.5707963705062866,
+        "file": "side-view-assumed.png",
+        "height": 2048,
+        "sha256": "06443168626f2e4510a256fb2a24749c2c6b3faa123db0e53d6a7d56acf95a8a",
+        "width": 2048
+      },
+      {
+        "bytes": 490967,
+        "camera_distance_applied": 42.7615852355957,
+        "camera_distance_requested": 42.7615852355957,
+        "camera_pitch": 0.11999999731779099,
+        "camera_target": [
+          0.7574880123138428,
+          5.978460788726807,
+          -0.33291196823120117
+        ],
+        "camera_yaw": 0.0,
+        "file": "front-view-assumed.png",
+        "height": 2048,
+        "sha256": "58955b6b959c1d3e89e89d9a457a1053d59862ebf1698c2429a1632664ffc620",
+        "width": 2048
+      }
+    ]
+  }
+}

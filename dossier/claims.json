@@ -1,0 +1,4903 @@
+{
+  "document_kind": "claim_ledger",
+  "schema_version": "ecopunk-model-claims-v2",
+  "catalogue": {
+    "id": "ecopunk-model-deliverables",
+    "version": "2026-10-24.2",
+    "sha256": "c0cb76151bf5d0776afaae4d59d7427efb65633bf359d3f4c2bda83c361c91cb"
+  },
+  "subject": {
+    "entity_id": "urn:qualia:taxon:banksia_integrifolia",
+    "dossier_id": "ECO-WP-08A-banksia-integrifolia",
+    "families": [
+      "flora_funga"
+    ],
+    "source_revision": "working-eco-wp-08b",
+    "corpus_revision": "2026-11-18.1",
+    "requirements_baseline_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+    "package_content_refs": [
+      "ontology/taxon.ttl",
+      "ontology/index.ttl",
+      "dist/taxon.q42",
+      "dist/index.q42",
+      "source/banksia-integrifolia.vibe",
+      "source/actuation.vibe",
+      "dist/banksia-integrifolia.hmc",
+      "dist/banksia-integrifolia.10d",
+      "dist/banksia-integrifolia-pbr.10d",
+      "dist/banksia-integrifolia-substrate.m64",
+      "dist/banksia-integrifolia-field.emf",
+      "dist/receipt.json",
+      "previews/front-view-assumed.png",
+      "previews/side-view-assumed.png",
+      "previews/three-quarter-view-assumed.png",
+      "previews/turnaround.png",
+      "previews/blueprint.svg",
+      "previews/spectral-slice.png",
+      "previews/bark-albedo.png",
+      "previews/bark-normal.png",
+      "previews/bark-orm.png",
+      "previews/review-receipt.json",
+      ".synth/bookmarks.json",
+      ".synth/jobs.json",
+      "synth.project.json",
+      "dossier/claims.json",
+      "README.md"
+    ],
+    "identifiers": [
+      {
+        "value": "urn:qualia:taxon:banksia_integrifolia",
+        "scheme": "qualia_urn",
+        "issuer_or_authority_ref": "IntentEco / QualiaDB",
+        "scope": "working_taxon_concept",
+        "source_ref": "ontology/taxon.ttl",
+        "association_status": "asserted",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/index.ttl"
+      },
+      {
+        "value": "did:q42:taxon:banksia_integrifolia",
+        "scheme": "did_q42",
+        "issuer_or_authority_ref": "IntentEco / QualiaDB",
+        "scope": "working_taxon_concept",
+        "source_ref": "ontology/taxon.ttl",
+        "association_status": "asserted",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/index.ttl"
+      },
+      {
+        "value": "https://id.biodiversity.org.au/taxon/apni/51732899",
+        "scheme": "APNI_APC_taxon",
+        "issuer_or_authority_ref": "CHAH / Australian Plant Census",
+        "scope": "species_taxon_concept",
+        "source_ref": "https://id.biodiversity.org.au/taxon/apni/51732899",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      },
+      {
+        "value": "https://id.biodiversity.org.au/name/apni/107602",
+        "scheme": "APNI_name",
+        "issuer_or_authority_ref": "CHAH / Australian Plant Name Index",
+        "scope": "species_name",
+        "source_ref": "https://id.biodiversity.org.au/name/apni/107602",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      },
+      {
+        "value": "GBIF:7682229",
+        "scheme": "GBIF_taxon_key",
+        "issuer_or_authority_ref": "GBIF Backbone Taxonomy",
+        "scope": "species_concept",
+        "source_ref": "https://www.gbif.org/species/7682229",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      },
+      {
+        "value": "https://vicflora.rbg.vic.gov.au/flora/taxon/36a63a70-f6bb-44aa-9b00-fc71b4264b5e",
+        "scheme": "VicFlora_UUID",
+        "issuer_or_authority_ref": "Royal Botanic Gardens Victoria",
+        "scope": "species_treatment",
+        "source_ref": "https://vicflora.rbg.vic.gov.au/flora/taxon/36a63a70-f6bb-44aa-9b00-fc71b4264b5e",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      },
+      {
+        "value": "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=sp&name=Banksia~integrifolia&page=nswfl",
+        "scheme": "PlantNET_NSW",
+        "issuer_or_authority_ref": "Royal Botanic Gardens & Domain Trust Sydney",
+        "scope": "species_treatment",
+        "source_ref": "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=sp&name=Banksia~integrifolia&page=nswfl",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      },
+      {
+        "value": "https://profiles.ala.org.au/opus/foa/profile/Banksia%20integrifolia",
+        "scheme": "Flora_of_Australia_ALA",
+        "issuer_or_authority_ref": "ABRS / Atlas of Living Australia",
+        "scope": "species_treatment",
+        "source_ref": "https://profiles.ala.org.au/opus/foa/profile/Banksia%20integrifolia",
+        "association_status": "verified",
+        "valid_from": "2026-11-18",
+        "valid_until": "",
+        "mapping_ref": "ontology/taxon.ttl"
+      }
+    ],
+    "identifier_mapping_refs": [
+      "ontology/taxon.ttl",
+      "ontology/index.ttl"
+    ]
+  },
+  "reported_status": "incomplete",
+  "profiles": [
+    {
+      "id": "film",
+      "style": "",
+      "delivery_target": "",
+      "criteria_ref": "",
+      "status": "unassessed",
+      "representation_refs": []
+    },
+    {
+      "id": "open_world_game",
+      "style": "",
+      "delivery_target": "",
+      "criteria_ref": "",
+      "status": "unassessed",
+      "representation_refs": []
+    },
+    {
+      "id": "cartoon",
+      "style": "",
+      "delivery_target": "",
+      "criteria_ref": "",
+      "status": "unassessed",
+      "representation_refs": []
+    }
+  ],
+  "inventories": {
+    "admission_negative_case": [],
+    "animal_behaviour": [],
+    "animal_interaction": [],
+    "animal_process": [],
+    "animal_relation": [],
+    "animal_state": [],
+    "attachment": [],
+    "avatar_action": [],
+    "avatar_behaviour": [],
+    "avatar_expression": [],
+    "avatar_variant": [],
+    "behaviour": [],
+    "behaviour_case": [],
+    "clip": [],
+    "compatible_variant": [],
+    "component": [
+      {
+        "id": "organ-proteoid-cluster-root-system",
+        "description": "PO:0025025 / PO:0025524 / PO:0000038 / PO:0000042 Proteoid cluster root mats for coastal dune phosphorus uptake, anchoring taproot/lateral roots, and basal lignotuber / epicormic resprouting capacity",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-gnarled-tessellated-trunk-bole",
+        "description": "PO:0025004 / PO:0004518 / PO:0005849 / PO:0005848 / PO:0005597 Twisted wind-sheared trunk with rough grey deeply tessellated corky bark, pinkish-red medullary-rayed heartwood, sapwood, and vascular cambium",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-pseudowhorled-branch-architecture",
+        "description": "PO:0009006 / PO:0020100 Sympodial/pseudowhorled branching nodes with Shinozaki pipe-model scaling (n=2.49, fork angles 38-68 deg)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-whorled-discolorous-foliage",
+        "description": "PO:0025034 Whorls of 3-5 oblanceolate leaves (entire adult margins vs serrate juvenile margins), strongly discolorous dark dull-green adaxial cuticle vs bright silvery-white felted tomentose abaxial underside",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-cylindrical-flower-spike-and-follicular-cone",
+        "description": "PO:0009046 / PO:0009001 / PO:0009010 Erect cylindrical golden-yellow/pale-lemon conflorescence spikes (7-14 cm) maturing into persistent woody cones with protruding bivalved follicles (8-15 mm) and winged seeds",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "contact_case": [],
+    "conversion": [],
+    "corrective": [],
+    "damage_transition": [],
+    "device_profile": [],
+    "environment_case": [],
+    "environment_layer": [],
+    "environment_process": [],
+    "environment_scenario": [],
+    "environment_transition": [],
+    "failure_mode": [],
+    "film_action": [],
+    "film_shot": [],
+    "film_simulation": [],
+    "game_interaction": [],
+    "graph_partition": [
+      {
+        "id": "gp-taxon-q42",
+        "description": "Compiled taxon, PO Proteaceae anatomy, pipe-model allometry, InstanceState64, ecology, and Country provenance graph (405 quins)",
+        "source_ref": "dist/taxon.q42",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "gp-index-q42",
+        "description": "Compiled DCAT dataset and distribution manifest graph (100 quins)",
+        "source_ref": "dist/index.q42",
+        "compatibility_ref": "ontology/index.ttl"
+      }
+    ],
+    "installation_case": [],
+    "interaction": [],
+    "life_stage": [
+      {
+        "id": "stage-coastal-seedling",
+        "description": "InstanceState64 ontogenetic_age_norm 0.00-0.15: coastal dune seedling establishing proteoid cluster roots and serrate-dentate juvenile leaf whorls (0.2-1.5 m)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-serrate-sapling",
+        "description": "InstanceState64 ontogenetic_age_norm 0.15-0.40: sapling with developing tessellated bark, lignotuber, pseudowhorled tiers, and serrate-to-entire foliar transition (1.5-5.0 m)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-mature-headland-tree",
+        "description": "InstanceState64 ontogenetic_age_norm 0.40-0.80: reproductive wind-sheared headland or woodland tree (4-25 m height, 0.25-0.65 m DBH) with cylindrical flower spikes and follicular cones",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-senescent-gnarled-veteran",
+        "description": "InstanceState64 ontogenetic_age_norm 0.80-1.00: gnarled wind-sculpted veteran tree (6-25 m height, 0.55-0.90 m DBH) with deeply tessellated bark, epicormic resprouts, and persistent cones",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "lifecycle_transition": [],
+    "locomotor_mode": [],
+    "lod": [],
+    "lod_transition": [],
+    "made_process": [],
+    "made_scenario": [],
+    "material_map": [],
+    "mechanism": [],
+    "media_resource": [],
+    "micro_lifecycle": [],
+    "micro_process": [],
+    "micro_structure": [],
+    "movement": [],
+    "movement_scenario": [],
+    "movement_state": [],
+    "operating_mode": [],
+    "organ": [
+      {
+        "id": "organ-proteoid-cluster-root-system",
+        "description": "PO:0025025 / PO:0025524 / PO:0000038 / PO:0000042 Proteoid cluster root mats for coastal dune phosphorus uptake, anchoring taproot/lateral roots, and basal lignotuber / epicormic resprouting capacity",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-gnarled-tessellated-trunk-bole",
+        "description": "PO:0025004 / PO:0004518 / PO:0005849 / PO:0005848 / PO:0005597 Twisted wind-sheared trunk with rough grey deeply tessellated corky bark, pinkish-red medullary-rayed heartwood, sapwood, and vascular cambium",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-pseudowhorled-branch-architecture",
+        "description": "PO:0009006 / PO:0020100 Sympodial/pseudowhorled branching nodes with Shinozaki pipe-model scaling (n=2.49, fork angles 38-68 deg)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-whorled-discolorous-foliage",
+        "description": "PO:0025034 Whorls of 3-5 oblanceolate leaves (entire adult margins vs serrate juvenile margins), strongly discolorous dark dull-green adaxial cuticle vs bright silvery-white felted tomentose abaxial underside",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "organ-cylindrical-flower-spike-and-follicular-cone",
+        "description": "PO:0009046 / PO:0009001 / PO:0009010 Erect cylindrical golden-yellow/pale-lemon conflorescence spikes (7-14 cm) maturing into persistent woody cones with protruding bivalved follicles (8-15 mm) and winged seeds",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "payload_type": [],
+    "phenology": [],
+    "physical_component": [],
+    "physical_damage_case": [],
+    "physical_facet": [],
+    "physical_system": [],
+    "placement_rule": [],
+    "plant_damage": [],
+    "plant_motion": [],
+    "plant_process": [],
+    "plant_relation": [
+      {
+        "id": "relfam-ro-cooccurrence",
+        "description": "RO:0002081 Coastal dune and headland scrub co-occurrence (Banksia serrata, Banksia marginata)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "relfam-ro-symbiosis",
+        "description": "RO:0002444 Coastal dune proteoid cluster-root rhizosphere mutualism",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "relfam-ro-pollinator-interaction",
+        "description": "RO:0002434 Winter nectar pollination interactions (Phylidonyris novaehollandiae, Trichoglossus moluccanus, Acanthorhynchus tenuirostris, Petaurus breviceps)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "port": [],
+    "profile": [
+      {
+        "id": "film",
+        "description": "Film delivery profile",
+        "source_ref": "",
+        "compatibility_ref": ""
+      },
+      {
+        "id": "open_world_game",
+        "description": "Open-world game delivery profile",
+        "source_ref": "",
+        "compatibility_ref": ""
+      },
+      {
+        "id": "cartoon",
+        "description": "Cartoon representation with declared film/realtime delivery",
+        "source_ref": "",
+        "compatibility_ref": ""
+      }
+    ],
+    "qualification_case": [],
+    "qualification_run": [],
+    "query_case": [
+      {
+        "id": "qcase-taxon-dump",
+        "description": "query_sparql SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 500 on dist/taxon.q42 (405 triples)",
+        "source_ref": "dist/taxon.q42",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "qcase-index-dump",
+        "description": "query_sparql SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 500 on dist/index.q42 (100 triples)",
+        "source_ref": "dist/index.q42",
+        "compatibility_ref": "ontology/index.ttl"
+      }
+    ],
+    "relation_family": [
+      {
+        "id": "relfam-ro-cooccurrence",
+        "description": "RO:0002081 Coastal dune and headland scrub co-occurrence (Banksia serrata, Banksia marginata)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "relfam-ro-symbiosis",
+        "description": "RO:0002444 Coastal dune proteoid cluster-root rhizosphere mutualism",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "relfam-ro-pollinator-interaction",
+        "description": "RO:0002434 Winter nectar pollination interactions (Phylidonyris novaehollandiae, Trichoglossus moluccanus, Acanthorhynchus tenuirostris, Petaurus breviceps)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "render_feature": [],
+    "representation": [],
+    "resource_process": [],
+    "review_domain": [
+      {
+        "id": "domain",
+        "description": "Botanical taxonomic key & Proteaceae trait domain review (ECO-WP-GATE-W1)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "visual",
+        "description": "Orthographic and diagnostic visual review (pending ECO-WP-08B)",
+        "source_ref": "",
+        "compatibility_ref": ""
+      },
+      {
+        "id": "technical",
+        "description": "Turtle/Q42 compilation and SPARQL verification (complete for ECO-WP-08A; HMC pending ECO-WP-08B)",
+        "source_ref": "dist/taxon.q42",
+        "compatibility_ref": "dist/index.q42"
+      },
+      {
+        "id": "rights",
+        "description": "SPC / CC-BY-4.0 / First Nations Country & Local Contexts TK/BC notice review",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": ".synth/bookmarks.json"
+      }
+    ],
+    "rig": [],
+    "rig_compatibility": [],
+    "rig_feature": [],
+    "scientific_model": [],
+    "scientific_scale": [],
+    "secondary_system": [],
+    "section_view": [],
+    "sound": [],
+    "sound_event": [],
+    "source": [
+      {
+        "id": "src-apni",
+        "description": "APNI Name 107602 & APC Taxon 51732899",
+        "source_ref": "https://id.biodiversity.org.au/taxon/apni/51732899",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-plantnet",
+        "description": "PlantNET NSW Flora Online \u2014 Banksia integrifolia",
+        "source_ref": "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=sp&name=Banksia~integrifolia&page=nswfl",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-vicflora",
+        "description": "VicFlora \u2014 Banksia integrifolia (36a63a70-f6bb-44aa-9b00-fc71b4264b5e)",
+        "source_ref": "https://vicflora.rbg.vic.gov.au/flora/taxon/36a63a70-f6bb-44aa-9b00-fc71b4264b5e",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-foa",
+        "description": "Flora of Australia (ABRS / ALA) \u2014 Banksia integrifolia",
+        "source_ref": "https://profiles.ala.org.au/opus/foa/profile/Banksia%20integrifolia",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-gbif",
+        "description": "GBIF Backbone Taxonomy (GBIF:7682229)",
+        "source_ref": "https://www.gbif.org/species/7682229",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-ala",
+        "description": "Atlas of Living Australia (ALA) Taxon Profile",
+        "source_ref": "https://bie.ala.org.au/species/https%3A/id.biodiversity.org.au/taxon/apni/51732899",
+        "compatibility_ref": "ontology/taxon.ttl"
+      },
+      {
+        "id": "src-austraits",
+        "description": "AusTraits Plant Trait Database & Wood/LMA Reference Corpus",
+        "source_ref": "https://austraits.org",
+        "compatibility_ref": "ontology/taxon.ttl"
+      }
+    ],
+    "stimulus_response": [],
+    "surface": [],
+    "surface_state": [],
+    "toon_action": [],
+    "toon_render_case": [],
+    "toon_rig_feature": [],
+    "toon_target": [],
+    "trait": [
+      {
+        "id": "trait-pipe-model-exponent",
+        "description": "Shinozaki/WBE pipe-model exponent n=2.49 (r_parent^n = sum r_child^n)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-fork-angle",
+        "description": "Pseudowhorled branch fork angle 38.0-68.0 deg (nominal 50.0 deg)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-internode-elongation",
+        "description": "Internode elongation ratio 0.74, golden divergence angle 2.399963 rad",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-mature-height",
+        "description": "Mature height 4.0-25.0 m across headland scrub to sheltered woodland",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-dbh",
+        "description": "Diameter at breast height (DBH) 0.25-0.90 m",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-sla",
+        "description": "Specific Leaf Area (SLA) 4.35 m2/kg adult sclerophyll nominal (range 3.8-15.2 m2/kg)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-wood-density",
+        "description": "Proteaceous medullary-rayed wood density 530.0 kg/m3 nominal (480-660 kg/m3)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-youngs-modulus",
+        "description": "Longitudinal Young's modulus E=9.8 GPa (modeled biomechanical estimate)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-xylem-p50",
+        "description": "Xylem cavitation vulnerability P50=-3.4 MPa (modeled hydraulic estimate)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-nectar-yield",
+        "description": "Autumn-winter conflorescence nectar output 0.8-4.5 mL/spike/24h (nominal 2.2)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "trait-elevation-range",
+        "description": "Elevation range 0-1500 m AHD (0-100 m typical coastal subsp. integrifolia)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "transition": [],
+    "twin_model": [],
+    "variant": [
+      {
+        "id": "stage-coastal-seedling",
+        "description": "InstanceState64 ontogenetic_age_norm 0.00-0.15: coastal dune seedling establishing proteoid cluster roots and serrate-dentate juvenile leaf whorls (0.2-1.5 m)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-serrate-sapling",
+        "description": "InstanceState64 ontogenetic_age_norm 0.15-0.40: sapling with developing tessellated bark, lignotuber, pseudowhorled tiers, and serrate-to-entire foliar transition (1.5-5.0 m)",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-mature-headland-tree",
+        "description": "InstanceState64 ontogenetic_age_norm 0.40-0.80: reproductive wind-sheared headland or woodland tree (4-25 m height, 0.25-0.65 m DBH) with cylindrical flower spikes and follicular cones",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "stage-senescent-gnarled-veteran",
+        "description": "InstanceState64 ontogenetic_age_norm 0.80-1.00: gnarled wind-sculpted veteran tree (6-25 m height, 0.55-0.90 m DBH) with deeply tessellated bark, epicormic resprouts, and persistent cones",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "work_procedure": [],
+    "world_case": [],
+    "subject_identifier": [
+      {
+        "id": "id-qualia-urn",
+        "description": "urn:qualia:taxon:banksia_integrifolia",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/index.ttl"
+      },
+      {
+        "id": "id-did-q42",
+        "description": "did:q42:taxon:banksia_integrifolia",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "ontology/index.ttl"
+      },
+      {
+        "id": "id-apni-taxon",
+        "description": "https://id.biodiversity.org.au/taxon/apni/51732899",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "id-apni-name",
+        "description": "https://id.biodiversity.org.au/name/apni/107602",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "id-gbif",
+        "description": "GBIF:7682229",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "id-vicflora",
+        "description": "https://vicflora.rbg.vic.gov.au/flora/taxon/36a63a70-f6bb-44aa-9b00-fc71b4264b5e",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      }
+    ],
+    "identifier_mapping": [
+      {
+        "id": "map-taxon-ttl",
+        "description": "owl:sameAs and dwc identifier mappings in ontology/taxon.ttl",
+        "source_ref": "ontology/taxon.ttl",
+        "compatibility_ref": "dist/taxon.q42"
+      },
+      {
+        "id": "map-index-ttl",
+        "description": "DCAT dataset & distribution mappings in ontology/index.ttl",
+        "source_ref": "ontology/index.ttl",
+        "compatibility_ref": "dist/index.q42"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "deliverable_id": "ID-01",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Subject taxon identifiers (urn:qualia:taxon:banksia_integrifolia, did:q42:taxon:banksia_integrifolia, APNI 107602, APC 51732899, GBIF 7682229, VicFlora, PlantNET NSW, Flora of Australia) recorded; exact site and individual occurrence remain pending.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dossier/claims.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-08B-site-referent"
+        ],
+        "remaining_work": "Resolve exact coastal dune/headland site/individual occurrence and complete domain review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-02",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Taxon concept, definition, InstanceState64 template, organ, and working release identifier mappings authored in ontology/taxon.ttl and ontology/index.ttl.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-index-ttl"
+        ],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Add part/mesh/release SHA-256 mappings when .10d/.hmc are produced in ECO-WP-08B."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-03",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Whole-organism template and 5 PO Proteaceae anatomical organ subsystems (proteoid cluster roots + lignotuber, gnarled tessellated trunk + medullary-rayed wood, pseudowhorled branches, whorled discolorous leaves, cylindrical flower spikes & follicular cones) inventoried in ontology/taxon.ttl and dossier/claims.json.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Bind semantic organ IDs to .vibe/.10d geometry submeshes in ECO-WP-08B."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-04",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Three mandatory target profiles (film, open_world_game, cartoon) declared in dossier/claims.json as unassessed targets.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "dossier/claims.json"
+        ],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Produce and independently review profile derivatives in ECO-WP-08B / ECO-WP-GATE-W1."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-05",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Four InstanceState64 ontogenetic variants (coastal_seedling, serrate_sapling, mature_headland_tree, senescent_gnarled_veteran) inventoried with parameter bounds.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dossier/claims.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Implement and verify stage-specific geometry variants in .vibe/.10d."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ID-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-01",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Authoritative biodiversity sources (APNI/APC, ALA, GBIF, PlantNET NSW, VicFlora, Flora of Australia, AusTraits, NSW BioNet, TERN, Local Contexts TK/BC) bookmarked and cited.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          ".synth/bookmarks.json",
+          "ontology/taxon.ttl"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Complete botanical domain review of source alignment."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-02",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Cross-registry taxonomic identifiers and non-substitution boundaries (Banksia serrata, B. marginata, B. ericifolia, B. spinulosa, B. paludosa) asserted in ontology/taxon.ttl.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Confirm domain reviewer sign-off on taxonomic boundaries."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-03",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Taxon and manifest RDF partitions compiled into isolated dist/taxon.q42 (405 quins) and dist/index.q42 (100 quins) without ingesting into shared daemon graph.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "dist/taxon.q42",
+          "dist/index.q42",
+          ".synth/jobs.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-q42-compile",
+          "ev-index-q42-compile"
+        ],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Bind compiled .q42 partitions inside final .hmc package in ECO-WP-08B."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-04",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "satisfied",
+        "claim": "Turtle 1.1 ontologies parsed cleanly by synth_compile_q42 into sealed .q42 volumes (dist/taxon.q42 sha256=c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06, dist/index.q42 sha256=fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537).",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-q42-compile",
+          "ev-index-q42-compile"
+        ],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": ""
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-05",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Typed biophysical and allometric dimensions (pipe-model exponent 2.49, fork angles 38-68 deg, height 4-25 m, DBH 0.25-0.90 m, SLA 4.35 m2/kg nominal, wood density 530 kg/m3, modeled E=9.8 GPa, modeled P50=-3.4 MPa, elevation 0-1500 m AHD) encoded in ontology/taxon.ttl.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Verify biomechanical/hydraulic trait values against empirical AusTraits entries and complete domain review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-06",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Anatomical semantics mapped to Plant Ontology PO:* terms (PO:0025025, PO:0025524, PO:0025004, PO:0004518, PO:0005849, PO:0005848, PO:0005597, PO:0009006, PO:0025034, PO:0009046, PO:0009001, PO:0009010) and living_world_anatomy pins.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-08B"
+        ],
+        "remaining_work": "Bind anatomical PO subsystems to 3D .vibe/.10d submeshes and verify in ECO-WP-08B."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-07",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Regional locality scope (South-Eastern Australian coastal dunes, headlands & near-coastal sands across NSW & Victoria, 0-100 m typical coastal subsp. integrifolia, up to 1500 m montane subsp. monticola) documented with pending individual site notice.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "README.md"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Bind exact site/occurrence when field individual is selected."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-08",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Ecological relations (RO:0002081 coastal dune/headland scrub co-occurrence with B. serrata and B. marginata, RO:0002444 proteoid rhizosphere guild, RO:0002434 winter nectar pollination by Phylidonyris novaehollandiae, Trichoglossus moluccanus, Acanthorhynchus tenuirostris, and Petaurus breviceps; coastal dune stabilization) asserted in ontology/taxon.ttl.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Complete domain review of ecological interactions."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-09",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Reproductive phenology (erect cylindrical golden-yellow/pale-lemon flower spikes 7-14 cm with spiral parastichies, autumn-winter anthesis, persistent woody cones with bivalved follicles 8-15 mm opening spontaneously 8-10 months post-anthesis, winged seeds) and lignotuber/epicormic resilience authored.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dist/taxon.q42"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-sparql-taxon-verify"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Complete domain review and seasonal state binding in ECO-WP-08B."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-10",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "SPC commons governance, CC-BY-4.0 dataset license, Bundjalung/Gumbaynggirr/Worimi/Awabakal/Dharawal/Yuin/Gunai-Kurnai/Bunurong/Wadawurrung Country provenance, and Local Contexts TK/BC notice placeholders documented.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          ".synth/bookmarks.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-rights-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Complete rights and Indigenous custodianship consultation review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-11",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "partial",
+        "claim": "Epistemic distinction between sourced taxon reference traits, modeled FSPM/biomechanical/hydraulic parameters, and unassessed individual occurrence preserved in ontology/taxon.ttl and dossier/claims.json.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dossier/claims.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [],
+        "remaining_work": "Extend distinction to rendered plates once ECO-WP-08B executes."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "KN-12",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Required for Banksia integrifolia flora deliverable ledger.",
+        "applicability_authority_ref": "ECO-WP-08A",
+        "claim_status": "satisfied",
+        "claim": "Executed and verified query_sparql queries against sealed dist/taxon.q42 (405 triples) and dist/index.q42 (100 triples).",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "dist/taxon.q42",
+          "dist/index.q42"
+        ],
+        "evidence_refs": [
+          "ev-sparql-taxon-verify",
+          "ev-sparql-index-verify"
+        ],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": ""
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "SRC-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GEO-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MAT-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FILM-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "GAME-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TOON-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "RIG-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MOV-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-13",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "BHV-14",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FLORA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "FAUNA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MADE-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "MICRO-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "ENV-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "HUM-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PHY-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "AUD-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-11",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "PKG-12",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-01",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-02",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-03",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-04",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-05",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-06",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-07",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-08",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-09",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "QA-10",
+      "assessment": {
+        "applicability": "unassessed",
+        "applicability_rationale": "",
+        "applicability_authority_ref": "",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [],
+        "remaining_work": "Unassessed: populate applicable inventories, deliver and evidence this requirement."
+      },
+      "cases": []
+    }
+  ],
+  "evidence_index": [
+    {
+      "id": "ev-taxon-ttl",
+      "kind": "source_inspection",
+      "artifact_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "input_refs": [],
+      "method_ref": "species-ontology-researcher authoring + authoritative AU biodiversity cross-check",
+      "result": "Authored ontology/taxon.ttl with Proteaceae PO:* anatomy, Shinozaki pipe-model allometry, InstanceState64 bounds, RO:* interactions, and 9 SE Australian coastal Country attributions.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\ontology\\taxon.ttl",
+      "content_sha256": "5f1e6e4563cc08be2e8e559afd49f09c1f2c7d24529fdaada1cac30a86506402",
+      "issued_by": "species-ontology-researcher",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "Taxon & biophysical ontology source"
+    },
+    {
+      "id": "ev-index-ttl",
+      "kind": "source_inspection",
+      "artifact_refs": [
+        "ontology/index.ttl"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "DCAT / Q42 manifest authoring",
+      "result": "Authored ontology/index.ttl DCAT dataset & distribution manifest declaring ECO-WP-08A deliverables and planned ECO-WP-08B targets.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\ontology\\index.ttl",
+      "content_sha256": "107bf771d35cf61ab2ef97fa54202ba2954045aad2d1769613d20648ab20617a",
+      "issued_by": "species-ontology-researcher",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "DCAT dataset manifest source"
+    },
+    {
+      "id": "ev-taxon-q42-compile",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/taxon.q42"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "mcp_synth_synth_compile_q42 (ingest_to_graph=false)",
+      "result": "Compiled ontology/taxon.ttl to intenteco-bint-08a-taxon.q42 (405 quins, 414 lex terms, sha256=c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06) and copied to dist/taxon.q42.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\taxon.q42",
+      "content_sha256": "c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06",
+      "issued_by": "synth_compile_q42",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "Sealed taxon .q42 volume"
+    },
+    {
+      "id": "ev-index-q42-compile",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/index.q42"
+      ],
+      "input_refs": [
+        "ontology/index.ttl"
+      ],
+      "method_ref": "mcp_synth_synth_compile_q42 (ingest_to_graph=false)",
+      "result": "Compiled ontology/index.ttl to intenteco-bint-08a-index.q42 (100 quins, 93 lex terms, sha256=fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537) and copied to dist/index.q42.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\index.q42",
+      "content_sha256": "fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537",
+      "issued_by": "synth_compile_q42",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "Sealed manifest .q42 volume"
+    },
+    {
+      "id": "ev-sparql-taxon-verify",
+      "kind": "graph_reconciliation",
+      "artifact_refs": [
+        "dist/taxon.q42"
+      ],
+      "input_refs": [
+        "dist/taxon.q42"
+      ],
+      "method_ref": "query_sparql (vault_path)",
+      "result": "SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 500 returned 405 bindings verifying taxon concept, DID locator, PO:* subsystems, traits, InstanceState64 stages, RO:* interactions, and 9 Country records.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\taxon.q42",
+      "content_sha256": "c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06",
+      "issued_by": "query_sparql",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "Taxon .q42 SPARQL verification"
+    },
+    {
+      "id": "ev-sparql-index-verify",
+      "kind": "graph_reconciliation",
+      "artifact_refs": [
+        "dist/index.q42"
+      ],
+      "input_refs": [
+        "dist/index.q42"
+      ],
+      "method_ref": "query_sparql (vault_path)",
+      "result": "SELECT ?s ?p ?o WHERE { ?s ?p ?o } LIMIT 500 returned 100 bindings verifying DCAT Dataset, Distributions, and OrganismTemplate.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\index.q42",
+      "content_sha256": "fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537",
+      "issued_by": "query_sparql",
+      "at": "2026-11-18T07:35:00Z",
+      "scope": "Manifest .q42 SPARQL verification"
+    },
+    {
+      "id": "ev-vibe-cad-source",
+      "kind": "source_authoring",
+      "artifact_refs": [
+        "source/banksia-integrifolia.vibe"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "multi-station-cubic-loft-cad",
+      "result": "Authored 209-part semantic PO:* CAD source (811 lines; Root Order 0..4 subterranean graph: lignotuber PO:0025523, -3.80 m taproot, 8 primary lateral roots r=5.8-7.35 m, 18 secondary roots, 12 vertical sinkers -1.85..-3.15 m, 28 tertiary feeder roots, 110 proteoid mats PO:0025531, 16 mycelial rhizomorph cords, 96 mycorrhizal root mantles RO:0002444; plus 72 outer+mid-crown clusters, 2,685 discolorous adult blades, 14 serrate juvenile coppice blades, 118 golden flower spikes, 64 woody follicular cones).",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\source\\banksia-integrifolia.vibe",
+      "content_sha256": "d9ce5d45e9ad1d574ba29a3a3a1942e7506c430deac5686924647cbbd0cec6f9",
+      "issued_by": "botanical-cad-producer",
+      "at": "2026-11-18T12:19:28Z",
+      "scope": "Native editable .vibe botanical CAD source"
+    },
+    {
+      "id": "ev-actuation-vibe-eval",
+      "kind": "simulation",
+      "artifact_refs": [
+        "source/actuation.vibe"
+      ],
+      "input_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "method_ref": "mcp_synth:vibe_check+vibe_eval",
+      "result": "vibe_check valid=true (0 errors); vibe_eval mature_ontogeny (stage=mature_headland_tree, height_m=11.29, dbh_m=0.520, crown_radius_m=5.57, pipe_model_exponent=2.49), autumn_anthesis (golden_spike_intensity=0.946, nectar_ml_per_spike_24h=4.3002), and rhizosphere_coupling (root_plate_radius_m=6.99, taproot_depth_m=3.80, anchorage_safety_factor=14.23, citrate_malate_exudation_umol_g_h=15.71, bioelectric_action_potential_hz=13.66, rhizosphere_emf_amplitude_mv=56.08, hydraulic_lift_l_per_day=8.61, mycorrhizal_carbon_flux_mg_h=66.28).",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\source\\actuation.vibe",
+      "content_sha256": "4e3e9c39cd74182a593271ebd5c051647c8a904a1f12abeb27d06671d0f49f99",
+      "issued_by": "botanical-cad-producer",
+      "at": "2026-11-18T12:19:28Z",
+      "scope": "InstanceState64 ontogeny, autumn-winter anthesis, coastal wind harmonics, and rhizosphere EMF/exudate pressure coupling"
+    },
+    {
+      "id": "ev-hmc-production",
+      "kind": "build",
+      "artifact_refs": [
+        "dist/banksia-integrifolia.hmc",
+        "dist/banksia-integrifolia.10d",
+        "dist/banksia-integrifolia-pbr.10d",
+        "dist/banksia-integrifolia-substrate.m64",
+        "dist/banksia-integrifolia-field.emf",
+        "dist/receipt.json"
+      ],
+      "input_refs": [
+        "source/banksia-integrifolia.vibe"
+      ],
+      "method_ref": "synth.exe produce --profile files --quality-profile production16",
+      "result": "Sealed HMC (49286044 bytes, sha256=47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939); 10 packaged resources including .10d, -pbr.10d, -substrate.m64, -field.emf (0.1-50 Hz rhizosphere bio-electric waveguide + canopy PAR/NIR), PBR bark maps, and XPBD wind+root island.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\dist\\banksia-integrifolia.hmc",
+      "content_sha256": "47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939",
+      "issued_by": "synth.exe",
+      "at": "2026-11-18T12:19:28Z",
+      "scope": "Full production16 HMC container packaging"
+    },
+    {
+      "id": "ev-strict-reopen",
+      "kind": "replay_verification",
+      "artifact_refs": [
+        "dist/banksia-integrifolia.hmc",
+        "dist/receipt.json"
+      ],
+      "input_refs": [
+        "dist/banksia-integrifolia.hmc"
+      ],
+      "method_ref": "synth.exe produce --reopen",
+      "result": "Bit-exact deterministic strict replay verified: reopened HMC sha256=47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939 matches primary HMC.",
+      "status": "passed",
+      "location": "C:\\github\\synth\\production\\intenteco-bint-08b-r6-reopen.hmc",
+      "content_sha256": "47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939",
+      "issued_by": "synth.exe",
+      "at": "2026-11-18T12:19:28Z",
+      "scope": "Strict HMC reopen determinism"
+    },
+    {
+      "id": "ev-native-10d-preview",
+      "kind": "visual_inspection",
+      "artifact_refs": [
+        "previews/front-view-assumed.png",
+        "previews/side-view-assumed.png",
+        "previews/three-quarter-view-assumed.png",
+        "previews/turnaround.png",
+        "previews/blueprint.svg",
+        "previews/spectral-slice.png",
+        "previews/review-receipt.json"
+      ],
+      "input_refs": [
+        "dist/banksia-integrifolia.10d"
+      ],
+      "method_ref": "synth.exe preview",
+      "result": "Native 2048x2048 orthographic PNGs rendered (282,752 triangles, 156,350 vertices, bounds_min=[-7.92,-3.80,-8.00], bounds_max=[9.43,15.76,7.33]); visually inspected for full-canopy-width Root Order 0..4 subterranean root plate, 16 interlocking cream-gold/amber mycelial cords, 96 mycorrhizal mantles, 110 proteoid mats, lignotuber + serrate juvenile coppice, tessellated grey trunk fork, 6 inward mid-crown limbs, balanced dark-green/silver-sage discolorous foliage, 118 golden flower spikes, and 64 woody cones.",
+      "status": "passed",
+      "location": "C:\\github\\eco-intent\\banksia-integrifolia\\previews\\review-receipt.json",
+      "content_sha256": "ee2dbfcc2961acd42ea90704bd5fe0288ab3de46e28a79efed49969642141ba1",
+      "issued_by": "synth.exe preview + botanical-cad-producer",
+      "at": "2026-11-18T12:19:28Z",
+      "scope": "Native .10d orthographic visual inspection"
+    }
+  ],
+  "review_index": [
+    {
+      "id": "rev-domain-pending",
+      "domain": "domain",
+      "reviewer": "species-quality-gate-reviewer / botanical-reviewer",
+      "reviewer_kind": "human",
+      "authority_ref": "ECO-WP-GATE-W1",
+      "decision": "pending",
+      "artifact_refs": [
+        "ontology/taxon.ttl",
+        "dist/taxon.q42"
+      ],
+      "evidence_refs": [
+        "ev-taxon-ttl",
+        "ev-sparql-taxon-verify"
+      ],
+      "scope": "PlantNET/VicFlora/Flora of Australia species alignment and coastal site/individual referent binding",
+      "at": "2026-11-18T07:35:00Z",
+      "decision_record_ref": "pending_ECO-WP-GATE-W1"
+    },
+    {
+      "id": "rev-visual-pending",
+      "domain": "visual",
+      "reviewer": "species-quality-gate-reviewer",
+      "reviewer_kind": "agent",
+      "authority_ref": "ECO-WP-GATE-W1",
+      "decision": "pending",
+      "artifact_refs": [
+        "previews/front-view-assumed.png",
+        "previews/side-view-assumed.png",
+        "previews/three-quarter-view-assumed.png",
+        "previews/turnaround.png",
+        "previews/blueprint.svg",
+        "previews/spectral-slice.png",
+        "previews/review-receipt.json"
+      ],
+      "evidence_refs": [
+        "ev-native-10d-preview"
+      ],
+      "scope": "ECO-WP-GATE-W1 independent orthographic and diagnostic visual acceptance review",
+      "at": "2026-11-18T07:35:00Z",
+      "decision_record_ref": "pending_ECO-WP-GATE-W1"
+    },
+    {
+      "id": "rev-rights-pending",
+      "domain": "rights",
+      "reviewer": "ICIP / SPC Custodianship Reviewer",
+      "reviewer_kind": "human",
+      "authority_ref": "SPC / Local Contexts TK-BC",
+      "decision": "pending",
+      "artifact_refs": [
+        "ontology/taxon.ttl"
+      ],
+      "evidence_refs": [
+        "ev-taxon-ttl"
+      ],
+      "scope": "Bundjalung, Gumbaynggirr, Worimi, Awabakal, Dharawal, Yuin, Gunai/Kurnai, Bunurong, and Wadawurrung Country attribution and Local Contexts notice review",
+      "at": "2026-11-18T07:35:00Z",
+      "decision_record_ref": "pending_custodian_consultation"
+    }
+  ],
+  "subject_specific_claims": [
+    {
+      "deliverable_id": "TREE-01",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Working scope bound to Banksia integrifolia L.f. across South-Eastern Australian coastal dunes, headlands & near-coastal sands with authoritative APNI/APC, ALA, GBIF, PlantNET NSW, VicFlora, Flora of Australia, and vernacular mappings; non-substitution boundaries set against B. serrata, B. marginata, B. ericifolia, B. spinulosa, and B. paludosa. Exact site and individual occurrence remain pending.",
+        "claimant": "species-ontology-researcher",
+        "evaluated_at": "2026-11-18T07:35:00Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "dossier/claims.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl"
+        ],
+        "review_refs": [
+          "rev-domain-pending"
+        ],
+        "blocked_by": [
+          "site-individual-resolution"
+        ],
+        "remaining_work": "Resolve exact coastal dune/headland site/individual occurrence and obtain domain review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-02",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Taxonomic, Proteaceae anatomical (PO:*), pipe-model allometric, ecological (RO:*), Country provenance, and DCAT manifest graph partitions compiled to dist/taxon.q42 (405 triples) and dist/index.q42 (100 triples) and reconciled with 209 named PO:*/RO:*/ENVO:* 3D CAD subparts in source/banksia-integrifolia.vibe and dist/banksia-integrifolia.hmc.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "ontology/index.ttl",
+          "dist/taxon.q42",
+          "dist/index.q42",
+          "source/banksia-integrifolia.vibe",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-taxon-q42-compile",
+          "ev-index-q42-compile",
+          "ev-sparql-taxon-verify",
+          "ev-sparql-index-verify",
+          "ev-vibe-cad-source"
+        ],
+        "review_refs": [
+          "rev-domain-pending",
+          "rev-rights-pending",
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 domain, visual, and rights reviews."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-03",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Native editable .vibe CAD source authored in source/banksia-integrifolia.vibe (sha256=d9ce5d45e9ad1d574ba29a3a3a1942e7506c430deac5686924647cbbd0cec6f9, 209 semantic parts) and source/actuation.vibe (sha256=4e3e9c39cd74182a593271ebd5c051647c8a904a1f12abeb27d06671d0f49f99).",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "source/banksia-integrifolia.vibe",
+          "source/actuation.vibe"
+        ],
+        "evidence_refs": [
+          "ev-vibe-cad-source",
+          "ev-actuation-vibe-eval"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Verify independent edit round-trip under ECO-WP-GATE-W1."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-04",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "InstanceState64 ontogenetic stages (coastal_seedling, serrate_sapling, mature_headland_tree, senescent_gnarled_veteran) and parameter bounds specified in ontology/taxon.ttl and implemented in source/actuation.vibe without asserting unmeasured chronological ages; mature coastal headland specimen realized in 3D CAD.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "source/actuation.vibe",
+          "source/banksia-integrifolia.vibe"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-actuation-vibe-eval",
+          "ev-vibe-cad-source"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Confirm stage-specific regime visual gate under ECO-WP-GATE-W1."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-05",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Juvenile serrate-margined coppice leaves (14 blades on 2 basal shoots) and adult whorled strongly discolorous oblanceolate leaves (2,685 blades across 72 outer + mid-crown clusters and 33 secondary rosettes: dominant dark-green adaxial [0.18,0.38,0.16] vs tucked coastal silver-sage abaxial [0.64,0.68,0.62]) authored in source/banksia-integrifolia.vibe and verified in previews/*.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "source/banksia-integrifolia.vibe",
+          "previews/three-quarter-view-assumed.png"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-vibe-cad-source",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 foliage inspection."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-06",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Full-canopy-width Root Order 0..4 subterranean architecture (PO:0025523 lignotuber, -3.80 m taproot, 8 primary lateral roots r=5.8-7.35 m, 18 secondary roots, 12 vertical sinkers -1.85..-3.15 m, 28 tertiary feeder roots, 110 proteoid mats PO:0025531), explicit 3D mycelial network (16 cream-gold/amber rhizomorph cords + 96 mycorrhizal mantles RO:0002444), pinkish-red heartwood/sapwood/cambium, tessellated grey corky bark bole, 3 S-curved leaders, 6 primary boughs, 27 secondary limbs, 60 tertiary branchlets, 118 erect golden flower spikes, and 64 woody follicular cones authored in 3D CAD.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "ontology/taxon.ttl",
+          "source/banksia-integrifolia.vibe",
+          "previews/front-view-assumed.png",
+          "previews/side-view-assumed.png"
+        ],
+        "evidence_refs": [
+          "ev-taxon-ttl",
+          "ev-vibe-cad-source",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 organ diagnostic inspection."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-07",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Autumn-winter conflorescence anthesis and follicular cone dehiscence phenology (evaluate_autumn_winter_anthesis) separated cleanly from InstanceState64 stress/damage states (salt_wind_shear_bias, drought_stress, fire_char_height, epicormic_sprout_factor) and coupled with rhizosphere EMF/exudate pressure responses in source/actuation.vibe.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "source/actuation.vibe",
+          "ontology/taxon.ttl"
+        ],
+        "evidence_refs": [
+          "ev-actuation-vibe-eval"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 phenology/stress review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-08",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Hierarchical XPBD coastal salt-wind + subterranean root-plate actuation (step_island_xpbd: fixed -3.20 m taproot & lignotuber inv_mass=0.0, root-plate sinkers, 0.28-0.55 Hz boughs, 2.8-5.2 Hz whorled leaf silver-flash flutter) and rhizosphere EMF/carboxylate coupling compiled in source/banksia-integrifolia.vibe and source/actuation.vibe.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "source/actuation.vibe",
+          "source/banksia-integrifolia.vibe",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-actuation-vibe-eval",
+          "ev-hmc-production"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 UV/topology retention sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-09",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Complete production16 HMC compiled to dist/banksia-integrifolia.hmc (49286044 bytes, sha256=47bd0fd6eb285343dfb4d62686e5bea079294f67a79a8f1140a1916d91925939) with bit-exact strict_replay_verified=true via synth.exe produce --reopen.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "dist/banksia-integrifolia.hmc",
+          "dist/banksia-integrifolia.10d",
+          "dist/banksia-integrifolia-pbr.10d",
+          "dist/banksia-integrifolia-substrate.m64",
+          "dist/banksia-integrifolia-field.emf",
+          "dist/receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-hmc-production",
+          "ev-strict-reopen"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 packaging gate."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-10",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Native 2048x2048 orthographic PNGs (front, side, three-quarter), turnaround.png, blueprint.svg, and spectral-slice.png rendered and visually inspected.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "previews/front-view-assumed.png",
+          "previews/side-view-assumed.png",
+          "previews/three-quarter-view-assumed.png",
+          "previews/turnaround.png",
+          "previews/blueprint.svg",
+          "previews/spectral-slice.png",
+          "previews/review-receipt.json"
+        ],
+        "evidence_refs": [
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete independent ECO-WP-GATE-W1 visual review."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-11",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "partial",
+        "claim": "Full-canopy-width Root Order 0..4 dune root plate (8 primary roots r=5.8-7.35 m, 18 secondary roots, 12 vertical sinkers -1.85..-3.15 m, 28 tertiary feeder roots, 110 proteoid mats, -3.80 m taproot), 16 interlocking mycelial cords + 96 mycorrhizal mantles, fixed taproot/lignotuber anchors (inv_mass=0.0), and substrate .m64 heightfield compiled and visually verified.",
+        "claimant": "botanical-cad-producer",
+        "evaluated_at": "2026-11-18T12:19:28Z",
+        "artifact_refs": [
+          "source/banksia-integrifolia.vibe",
+          "dist/banksia-integrifolia-substrate.m64",
+          "previews/front-view-assumed.png",
+          "previews/turnaround.png"
+        ],
+        "evidence_refs": [
+          "ev-vibe-cad-source",
+          "ev-native-10d-preview"
+        ],
+        "review_refs": [
+          "rev-visual-pending"
+        ],
+        "blocked_by": [
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Complete ECO-WP-GATE-W1 ground-contact & wind-stability sign-off."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-12",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B",
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Derive and independently review film, open_world_game, and cartoon profile representations."
+      },
+      "cases": []
+    },
+    {
+      "deliverable_id": "TREE-13",
+      "assessment": {
+        "applicability": "required",
+        "applicability_rationale": "Proposed flora acceptance case from biological-reference/tree-cases.md (2026-10-26).",
+        "applicability_authority_ref": "C:\\github\\ecopunk\\docs\\qa\\implementation-2026-10-26\\biological-reference\\tree-cases.md",
+        "claim_status": "unassessed",
+        "claim": "",
+        "claimant": "",
+        "evaluated_at": "",
+        "artifact_refs": [],
+        "evidence_refs": [],
+        "review_refs": [],
+        "blocked_by": [
+          "ECO-WP-08B",
+          "ECO-WP-GATE-W1"
+        ],
+        "remaining_work": "Perform native inspection and edit-round-trip verification."
+      },
+      "cases": []
+    }
+  ],
+  "native_gate_report_ref": ""
+}

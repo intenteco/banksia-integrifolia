@@ -1,0 +1,125 @@
+{
+  "schema": "synth.semantic-bookmarks/v1",
+  "items": [
+    {
+      "id": "apni-name-banksia-integrifolia",
+      "url": "https://id.biodiversity.org.au/name/apni/107602",
+      "kind": "page",
+      "title": "APNI Name — Banksia integrifolia L.f. (107602)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "apni-apc-taxon-banksia-integrifolia",
+      "url": "https://id.biodiversity.org.au/taxon/apni/51732899",
+      "kind": "page",
+      "title": "APNI / APC Taxon — Banksia integrifolia L.f. (51732899)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "ala-banksia-integrifolia",
+      "url": "https://bie.ala.org.au/species/https%3A/id.biodiversity.org.au/taxon/apni/51732899",
+      "kind": "page",
+      "title": "Atlas of Living Australia (ALA) — Banksia integrifolia",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "ala-api",
+      "url": "https://api.ala.org.au",
+      "kind": "page",
+      "title": "Atlas of Living Australia APIs",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "gbif-banksia-integrifolia",
+      "url": "https://www.gbif.org/species/7682229",
+      "kind": "page",
+      "title": "GBIF Backbone Taxonomy — Banksia integrifolia L.f. (7682229)",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "plantnet-nsw-banksia-integrifolia",
+      "url": "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=sp&name=Banksia~integrifolia&page=nswfl",
+      "kind": "page",
+      "title": "PlantNET NSW Flora Online — Banksia integrifolia",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "vicflora-banksia-integrifolia",
+      "url": "https://vicflora.rbg.vic.gov.au/flora/taxon/36a63a70-f6bb-44aa-9b00-fc71b4264b5e",
+      "kind": "page",
+      "title": "VicFlora — Banksia integrifolia",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "flora-of-australia-banksia-integrifolia",
+      "url": "https://profiles.ala.org.au/opus/foa/profile/Banksia%20integrifolia",
+      "kind": "page",
+      "title": "Flora of Australia (ABRS / ALA) — Banksia integrifolia L.f.",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "austraits-portal",
+      "url": "https://austraits.org",
+      "kind": "page",
+      "title": "AusTraits Plant Trait Database",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "nsw-bionet-atlas",
+      "url": "https://www.environment.nsw.gov.au/topics/animals-and-plants/biodiversity/nsw-bionet",
+      "kind": "page",
+      "title": "NSW BioNet Atlas",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "tern-ontology",
+      "url": "https://w3id.org/tern",
+      "kind": "page",
+      "title": "TERN Ecological Ontology",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    },
+    {
+      "id": "local-contexts-tk-bc",
+      "url": "https://localcontexts.org/labels/traditional-knowledge-labels/",
+      "kind": "page",
+      "title": "Local Contexts Traditional Knowledge (TK) & Biocultural (BC) Labels",
+      "requires_api_key": false,
+      "auth": "none",
+      "created_at": 1794987200,
+      "updated_at": 1794987200
+    }
+  ]
+}

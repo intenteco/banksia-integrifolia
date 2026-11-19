@@ -1,0 +1,152 @@
+{
+  "schema": "intenteco.lod-manifest/v1",
+  "slug": "banksia-integrifolia",
+  "did": "did:q42:taxon:banksia_integrifolia",
+  "kingdom": "flora",
+  "source_10d": {
+    "file": "banksia-integrifolia.10d",
+    "bytes": 5684208,
+    "sha256": "81fcce6f3a96ed51b613a4b169b663f096965af02015cdde76fab2ee8df49000",
+    "vertices": 156350,
+    "triangles": 282752,
+    "bounds_min": [
+      -7.917491436004639,
+      -3.7997663021087646,
+      -7.9954094886779785
+    ],
+    "bounds_max": [
+      9.432467460632324,
+      15.756688117980957,
+      7.329585552215576
+    ]
+  },
+  "synth_hmc": "C:\\github\\synth\\production\\intenteco-lod-banksia-integrifolia-comb-1795075433-898368.hmc",
+  "synth_export_dir": "C:\\github\\synth\\production\\intenteco-lod-banksia-integrifolia-comb-1795075433-898368",
+  "lods": {
+    "lod0": {
+      "bytes": 1018360,
+      "sha256": "45ba40b321e48dd5489b73499dce9d957aa8d7236a56eac34cf9b976f237b984",
+      "vertices": 44864,
+      "triangles": 64999,
+      "bounds_min": [
+        -7.892076015472412,
+        -3.799280881881714,
+        -7.995903015136719
+      ],
+      "bounds_max": [
+        9.408291816711426,
+        15.758110046386719,
+        7.305383205413818
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "banksia-integrifolia-lod0.10d",
+      "distance_band_m": "0-25m",
+      "local_url": "/intenteco/banksia-integrifolia/dist/lods/banksia-integrifolia-lod0.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/banksia-integrifolia/main/dist/lods/banksia-integrifolia-lod0.10d"
+    },
+    "lod1": {
+      "bytes": 309048,
+      "sha256": "1eb94096399cea5dc98038e2e4d9c2928b11ce3af9ef9cf951ddde89ed1ffd0a",
+      "vertices": 14428,
+      "triangles": 17800,
+      "bounds_min": [
+        -7.848392963409424,
+        -3.7988429069519043,
+        -8.153300285339355
+      ],
+      "bounds_max": [
+        9.520198822021484,
+        15.80843734741211,
+        7.2638750076293945
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "banksia-integrifolia-lod1.10d",
+      "distance_band_m": "25-90m",
+      "local_url": "/intenteco/banksia-integrifolia/dist/lods/banksia-integrifolia-lod1.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/banksia-integrifolia/main/dist/lods/banksia-integrifolia-lod1.10d"
+    },
+    "lod2": {
+      "bytes": 64804,
+      "sha256": "63d54b8ae22611dbb0cc26bbfea60671a35e47104d270d0d78ffb3ad7e171d3b",
+      "vertices": 2939,
+      "triangles": 3898,
+      "bounds_min": [
+        -7.710163116455078,
+        -3.7988429069519043,
+        -8.262939453125
+      ],
+      "bounds_max": [
+        9.59692096710205,
+        15.854917526245117,
+        6.956370830535889
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "banksia-integrifolia-lod2.10d",
+      "distance_band_m": ">90m",
+      "local_url": "/intenteco/banksia-integrifolia/dist/lods/banksia-integrifolia-lod2.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/banksia-integrifolia/main/dist/lods/banksia-integrifolia-lod2.10d"
+    },
+    "aboveground_lod1": {
+      "bytes": 435896,
+      "sha256": "8022833280bc8472d744ceaf5575261627a67c9bfdfce7d10157986e02ee53e1",
+      "vertices": 20488,
+      "triangles": 24800,
+      "bounds_min": [
+        -7.583611011505127,
+        -0.30000001192092896,
+        -8.130043029785156
+      ],
+      "bounds_max": [
+        9.503924369812012,
+        15.798578262329102,
+        5.775206089019775
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "banksia-integrifolia-aboveground-lod1.10d",
+      "distance_band_m": "25-90m (y >= -0.30m)",
+      "local_url": "/intenteco/banksia-integrifolia/dist/lods/banksia-integrifolia-aboveground-lod1.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/banksia-integrifolia/main/dist/lods/banksia-integrifolia-aboveground-lod1.10d"
+    },
+    "rhizosphere": {
+      "bytes": 145288,
+      "sha256": "138894bf86639a92c3e6cf94634a2061a2eea32a5f15ffe1da71f5b15d65f698",
+      "vertices": 6252,
+      "triangles": 9584,
+      "bounds_min": [
+        -7.892076015472412,
+        -3.799281358718872,
+        -6.5662689208984375
+      ],
+      "bounds_max": [
+        7.877099990844727,
+        0.15000009536743164,
+        7.30538272857666
+      ],
+      "sections": [
+        "QuantizedMesh",
+        "FieldSidecar",
+        "SurfaceReading"
+      ],
+      "file": "banksia-integrifolia-rhizosphere.10d",
+      "distance_band_m": "xray-subterranean (y <= 0.15m)",
+      "local_url": "/intenteco/banksia-integrifolia/dist/lods/banksia-integrifolia-rhizosphere.10d",
+      "remote_url": "https://raw.githubusercontent.com/intenteco/banksia-integrifolia/main/dist/lods/banksia-integrifolia-rhizosphere.10d"
+    }
+  }
+}

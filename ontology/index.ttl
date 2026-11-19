@@ -1,0 +1,134 @@
+# Banksia integrifolia L.f. (Coast Banksia) — DCAT Dataset & Distribution Manifest
+# Sealed copy compiles to dist/index.q42; working Turtle source lives in ontology/index.ttl.
+
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dwc:    <http://rs.tdwg.org/dwc/terms/> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix po:     <http://purl.obolibrary.org/obo/PO_> .
+@prefix q42:    <urn:qualia:ontology:> .
+@prefix qualia: <urn:qualia:taxon:> .
+@prefix bint:   <urn:qualia:taxon:banksia_integrifolia:> .
+@prefix rel:    <urn:qualia:release:banksia-integrifolia:> .
+@prefix member: <urn:qualia:member:banksia-integrifolia:> .
+
+qualia:banksia_integrifolia a dcat:Dataset ;
+    owl:sameAs <did:q42:taxon:banksia_integrifolia> ;
+    dct:title "Banksia integrifolia L.f. (Coast Banksia) Hypermedia Dataset"@en ;
+    dct:description "SE Australian coastal dune & headland Proteaceae keystone flora ontology, proteoid/pipe-model allometry, InstanceState64 ontogeny, and multi-regime Hypermedia (.hmc) production manifest."@en ;
+    dct:publisher <https://github.com/intenteco> ;
+    dct:spatial "South-Eastern Australia (Coastal Dunes, Headlands & Near-Coastal Sands across NSW and Victoria)" ;
+    dct:license <https://spdx.org/licenses/CC-BY-4.0.html> ;
+    q42:commonsFramework "SPC" ;
+    dcat:landingPage <https://github.com/intenteco/banksia-integrifolia> ;
+    dct:hasPart member:taxon-ttl ,
+                member:taxon-q42 ,
+                member:index-ttl ,
+                member:index-q42 ,
+                member:claims-json ,
+                member:bookmarks-json ,
+                member:jobs-json ,
+                member:planned-vibe-cad ,
+                member:planned-actuation-vibe ,
+                member:planned-hmc ,
+                member:planned-10d ,
+                member:planned-substrate-m64 ,
+                member:planned-field-emf .
+
+member:taxon-ttl a dcat:Distribution ;
+    dct:title "Taxon & Biophysical Ontology Source (Turtle)"@en ;
+    dcat:mediaType "text/turtle" ;
+    dcat:accessURL <file:ontology/taxon.ttl> ;
+    q42:artifactStatus "authored" .
+
+member:taxon-q42 a dcat:Distribution ;
+    dct:title "Sealed Taxon & Biophysical Ontology Volume (.q42)"@en ;
+    dcat:mediaType "application/vnd.qualia.q42" ;
+    dcat:accessURL <file:dist/taxon.q42> ;
+    prov:wasDerivedFrom member:taxon-ttl ;
+    prov:wasGeneratedBy <urn:qualia:morphism:synth_compile_q42> ;
+    q42:artifactStatus "compiled_q42" .
+
+member:index-ttl a dcat:Distribution ;
+    dct:title "DCAT Dataset & Distribution Manifest Source (Turtle)"@en ;
+    dcat:mediaType "text/turtle" ;
+    dcat:accessURL <file:ontology/index.ttl> ;
+    q42:artifactStatus "authored" .
+
+member:index-q42 a dcat:Distribution ;
+    dct:title "Sealed Dataset Manifest Volume (.q42)"@en ;
+    dcat:mediaType "application/vnd.qualia.q42" ;
+    dcat:accessURL <file:dist/index.q42> ;
+    prov:wasDerivedFrom member:index-ttl ;
+    prov:wasGeneratedBy <urn:qualia:morphism:synth_compile_q42> ;
+    q42:artifactStatus "compiled_q42" .
+
+member:claims-json a dcat:Distribution ;
+    dct:title "193-Row + TREE-01..TREE-13 Deliverable Claim Ledger"@en ;
+    dcat:mediaType "application/json" ;
+    dcat:accessURL <file:dossier/claims.json> ;
+    q42:catalogueVersion "2026-10-24.2" ;
+    q42:catalogueSha256 "c0cb76151bf5d0776afaae4d59d7427efb65633bf359d3f4c2bda83c361c91cb" ;
+    q42:artifactStatus "initialized_partial" .
+
+member:bookmarks-json a dcat:Distribution ;
+    dct:title "Authoritative Australian Biodiversity Bookmarks"@en ;
+    dcat:mediaType "application/json" ;
+    dcat:accessURL <file:.synth/bookmarks.json> ;
+    q42:artifactStatus "authored" .
+
+member:jobs-json a dcat:Distribution ;
+    dct:title "Synth Q42 Compilation Job Manifest"@en ;
+    dcat:mediaType "application/json" ;
+    dcat:accessURL <file:.synth/jobs.json> ;
+    q42:artifactStatus "authored" .
+
+# Planned downstream ECO-WP-08B CAD & Hypermedia targets (not yet produced in ECO-WP-08A)
+member:planned-vibe-cad a dcat:Distribution ;
+    dct:title "Planned Master Multi-Regime Botanical CAD (.vibe)"@en ;
+    dcat:mediaType "text/x-vibescript" ;
+    dcat:accessURL <file:source/banksia-integrifolia.vibe> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+member:planned-actuation-vibe a dcat:Distribution ;
+    dct:title "Planned XPBD Salt-Wind & Leaf-Flash Actuation (.vibe)"@en ;
+    dcat:mediaType "text/x-vibescript" ;
+    dcat:accessURL <file:source/actuation.vibe> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+member:planned-hmc a dcat:Distribution ;
+    dct:title "Planned Replay-Verified Hypermedia Container (.hmc)"@en ;
+    dcat:mediaType "application/vnd.qualia.hmc" ;
+    dcat:accessURL <file:dist/banksia-integrifolia.hmc> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+member:planned-10d a dcat:Distribution ;
+    dct:title "Planned Multi-Part PBR + Topology + BVH 10D Manifold (.10d)"@en ;
+    dcat:mediaType "application/vnd.qualia.10d" ;
+    dcat:accessURL <file:dist/banksia-integrifolia.10d> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+member:planned-substrate-m64 a dcat:Distribution ;
+    dct:title "Planned 64-Byte Aligned Matter/Tissue Substrate Grid (.m64)"@en ;
+    dcat:mediaType "application/vnd.qualia.m64" ;
+    dcat:accessURL <file:dist/banksia-integrifolia-substrate.m64> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+member:planned-field-emf a dcat:Distribution ;
+    dct:title "Planned Spectral/Dielectric Q42EMF64 Field Volume (.emf)"@en ;
+    dcat:mediaType "application/vnd.qualia.emf" ;
+    dcat:accessURL <file:dist/banksia-integrifolia-field.emf> ;
+    q42:artifactStatus "planned_ECO-WP-08B" .
+
+rel:working a dcat:Dataset ;
+    dct:isVersionOf qualia:banksia_integrifolia ;
+    dct:identifier "working-eco-wp-08a" ;
+    rdfs:comment "Single species HMC manifest. Individuals are parameterized by InstanceState64 (seed, ontogenetic_age_norm, height_scale, site_vigor, environmental_stress) plus pipe-model parameters."@en .
+
+bint:OrganismTemplate a rdfs:Class ;
+    rdfs:label "Banksia integrifolia L.f. Organism Template"@en ;
+    rdfs:comment "Instantiate individual trees via InstanceState64 across stages {coastal_seedling: 0.00-0.15, serrate_sapling: 0.15-0.40, mature_headland_tree: 0.40-0.80, senescent_gnarled_veteran: 0.80-1.00} with Shinozaki exponent 2.49, pseudowhorled fork angles 38-68 deg, proteoid cluster roots (PO:0025025), lignotuber (PO:0025524), tessellated bark (PO:0004518), pinkish-red medullary-rayed wood density 530 kg/m3, whorled strongly discolorous leaves (silvery-white abaxial underside), cylindrical golden-yellow flower spikes (7-14 cm), and bivalved woody follicular cones."@en .

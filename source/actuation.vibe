@@ -1,0 +1,371 @@
+import "vibe:0.3/nquin" as nquin;
+import "vibe:0.1/math" as math;
+requires [capability("capability.invoke")];
+
+// Banksia integrifolia L.f. (Coast Banksia, Proteaceae)
+// Runtime Ontogeny, Autumn-Winter Conflorescence & Follicle Phenology,
+// Coastal Salt-Wind Silvery Leaf-Flash Harmonics & Lignotuber/Epicormic Actuation Script
+// Work-Packet: ECO-WP-08B | Reference: ontology/taxon.ttl (InstanceState64, PO:* organs, TREE-04/07/08)
+
+let actuation_parity = nquin.wire.compute_wire_parity([66, 105, 110, 116, 65]);
+
+pure fn clamp01(x: f64) -> f64 {
+    if x < 0.0 { return 0.0; }
+    if x > 1.0 { return 1.0; }
+    return x;
+}
+
+pure fn lerp(a: f64, b: f64, t: f64) -> f64 {
+    return a + (b - a) * clamp01(t);
+}
+
+// Ontogenetic regime classification from InstanceState64.ontogenetic_age_norm [0.00..1.00]
+pure fn classify_ontogenetic_stage(age_norm: f64) -> string {
+    let a = clamp01(age_norm);
+    if a < 0.15 { return "coastal_seedling"; }
+    if a < 0.40 { return "serrate_sapling"; }
+    if a < 0.80 { return "mature_headland_tree"; }
+    return "senescent_gnarled_veteran";
+}
+
+// Allometric evaluator for height (m), DBH (m), wind-sheared crown spread (m),
+// proteoid root mat activity, tessellated bark depth, serrate juvenile vs entire adult foliage weights.
+pure fn evaluate_ontogeny(
+    age_norm: f64,
+    height_scale: f64,
+    site_vigor: f64,
+    salt_wind_shear_bias: f64,
+    drought_stress: f64
+) {
+    let a = clamp01(age_norm);
+    let h_scale = 0.35 + 0.90 * clamp01((height_scale - 0.35) / 0.90);
+    let vigor = 0.40 + 0.80 * clamp01((site_vigor - 0.40) / 0.80);
+    let wind_shear = clamp01(salt_wind_shear_bias);
+    let d_stress = clamp01(drought_stress);
+    let stage = classify_ontogenetic_stage(a);
+
+    let height_m = if a < 0.15 {
+        lerp(0.2, 1.5, a / 0.15)
+    } else if a < 0.40 {
+        lerp(1.5, 5.0, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        lerp(6.5, 18.5, (a - 0.40) / 0.40)
+    } else {
+        lerp(12.0, 22.0, (a - 0.80) / 0.20)
+    };
+
+    let dbh_m = if a < 0.15 {
+        lerp(0.01, 0.05, a / 0.15)
+    } else if a < 0.40 {
+        lerp(0.05, 0.22, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        lerp(0.25, 0.65, (a - 0.40) / 0.40)
+    } else {
+        lerp(0.55, 0.90, (a - 0.80) / 0.20)
+    };
+
+    let crown_radius_m = if a < 0.15 {
+        lerp(0.20, 0.75, a / 0.15)
+    } else if a < 0.40 {
+        lerp(0.75, 2.40, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        lerp(3.20, 6.80, (a - 0.40) / 0.40)
+    } else {
+        lerp(5.80, 7.60, (a - 0.80) / 0.20)
+    };
+
+    let lignotuber_swell = if a < 0.15 {
+        lerp(0.42, 0.78, a / 0.15)
+    } else if a < 0.40 {
+        lerp(0.78, 0.96, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        1.00
+    } else {
+        1.20
+    };
+
+    let tessellated_bark_furrow_mm = if a < 0.15 {
+        1.5
+    } else if a < 0.40 {
+        lerp(3.0, 12.0, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        lerp(14.0, 26.0, (a - 0.40) / 0.40)
+    } else {
+        lerp(24.0, 36.0, (a - 0.80) / 0.20)
+    };
+
+    let proteoid_mat_activity = if a < 0.15 {
+        lerp(0.65, 1.00, a / 0.15)
+    } else {
+        lerp(0.95, 0.75, a) * (0.55 + 0.45 * vigor)
+    };
+
+    let juvenile_serrate_weight = if a < 0.15 {
+        1.0
+    } else if a < 0.40 {
+        lerp(0.85, 0.18, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        0.05
+    } else {
+        lerp(0.08, 0.22, (a - 0.80) / 0.20)
+    };
+
+    let adult_discolorous_weight = if a < 0.15 {
+        0.0
+    } else if a < 0.40 {
+        lerp(0.15, 0.85, (a - 0.15) / 0.25)
+    } else if a < 0.80 {
+        lerp(0.92, 1.00, (a - 0.40) / 0.40) * (1.0 - 0.36 * d_stress)
+    } else {
+        lerp(0.90, 0.78, (a - 0.80) / 0.20) * (1.0 - 0.36 * d_stress)
+    };
+
+    // Onshore wind-shear crown asymmetry & trunk lean (coastal headland adaptation)
+    let headland_lean_deg = (6.0 + 18.0 * wind_shear) * clamp01((a - 0.10) / 0.65);
+
+    return {
+        stage: stage,
+        age_norm: a,
+        height_m: height_m * h_scale * (1.0 - 0.24 * wind_shear),
+        dbh_m: dbh_m * (0.85 + 0.15 * clamp01(site_vigor)),
+        crown_radius_m: crown_radius_m * (0.78 + 0.22 * vigor),
+        lignotuber_swell: lignotuber_swell,
+        tessellated_bark_furrow_mm: tessellated_bark_furrow_mm,
+        proteoid_mat_activity: proteoid_mat_activity,
+        headland_lean_deg: headland_lean_deg,
+        juvenile_serrate_weight: juvenile_serrate_weight,
+        adult_discolorous_weight: adult_discolorous_weight,
+        pipe_model_exponent: 2.49
+    };
+}
+
+// Autumn-winter flowering & spontaneous follicular cone dehiscence phenology
+// Strictly separated from InstanceState64 stress/damage parameters (TREE-07)
+// Anthesis spans January to July (peak autumn-winter around DOY ~ 125, early May).
+pure fn evaluate_autumn_winter_anthesis(day_of_year: f64, ontogenetic_age_norm: f64, site_vigor: f64) {
+    let two_pi = 6.283185307179586;
+    let a = clamp01(ontogenetic_age_norm);
+    let vigor = clamp01(site_vigor);
+    let maturity_gate = if a < 0.28 { 0.0 } else if a < 0.42 { lerp(0.0, 0.55, (a - 0.28) / 0.14) } else { 1.0 };
+
+    let phase_rad = two_pi * ((day_of_year - 125.0) / 365.0);
+    let floral_wave = clamp01(0.52 + 0.52 * math.cos(phase_rad));
+    let golden_spike_intensity = maturity_gate * floral_wave * (0.55 + 0.45 * vigor);
+    let bud_spike_intensity = maturity_gate * clamp01(0.50 + 0.50 * math.cos(phase_rad + 1.05));
+    // Weakly serotinous follicles open spontaneously 8-10 months post-anthesis (summer peak DOY ~ 30)
+    let follicle_dehiscence_wave = clamp01(0.50 - 0.50 * math.cos(phase_rad));
+    let woody_cone_retention = maturity_gate * (0.62 + 0.35 * follicle_dehiscence_wave);
+
+    // Autumn-winter nectar output (0.8 - 4.5 mL / spike / 24h, nominal 2.2)
+    let nectar_ml_per_spike_24h = (0.8 + 3.7 * golden_spike_intensity) * maturity_gate;
+
+    let phenophase = if golden_spike_intensity >= 0.55 {
+        "autumn_winter_golden_conflorescence_anthesis"
+    } else if bud_spike_intensity >= 0.50 {
+        "cylindrical_spike_bud_elongation"
+    } else {
+        "follicular_cone_maturation_and_seed_dehiscence"
+    };
+
+    return {
+        phenophase: phenophase,
+        golden_spike_intensity: golden_spike_intensity,
+        bud_spike_intensity: bud_spike_intensity,
+        woody_cone_retention: woody_cone_retention,
+        follicle_dehiscence_wave: follicle_dehiscence_wave,
+        nectar_ml_per_spike_24h: nectar_ml_per_spike_24h
+    };
+}
+
+// Coastal headland salt-wind harmonics (E = 9.8 GPa, rho = 530 kg/m3)
+// - Primary S-curved boughs sway at 0.28 - 0.55 Hz (nominal 0.42 Hz)
+// - Whorled discolorous oblanceolate leaves flutter at 2.8 - 5.2 Hz (nominal 3.9 Hz),
+//   flashing bright silvery-white felted abaxial undersides in onshore gusts.
+pure fn evaluate_coastal_wind_harmonics(wind_speed_ms: f64, salt_wind_shear_bias: f64, time_s: f64) {
+    let two_pi = 6.283185307179586;
+    let w = clamp01(wind_speed_ms / 22.0);
+    let gust_envelope = 0.64 + 0.36 * (0.5 + 0.5 * math.sin(two_pi * 0.21 * time_s));
+    let load = (wind_speed_ms / 13.5) * (0.65 + 0.35 * clamp01(salt_wind_shear_bias)) * gust_envelope;
+    let bough_sway = w * (0.32 * math.sin(two_pi * 0.42 * time_s) + 0.10 * math.sin(two_pi * 0.88 * time_s + 0.35));
+    let leaf_flutter = w * (0.22 * math.sin(two_pi * 3.9 * time_s + 0.7) + 0.08 * math.cos(two_pi * 5.0 * time_s));
+    let silver_flash_index = clamp01(0.28 + 0.72 * w * (0.5 + 0.5 * math.sin(two_pi * 3.9 * time_s)));
+    return {
+        bole_sway_hz: 0.20,
+        primary_bough_hz: 0.42,
+        secondary_limb_hz: 0.88,
+        tertiary_branchlet_hz: 1.75,
+        whorled_leaf_flutter_hz: 3.9,
+        bole_deflection_rad: 0.018 * load,
+        bough_amplitude_rad: 0.072 * load + 0.18 * bough_sway,
+        branchlet_amplitude_rad: 0.17 * load,
+        leaf_flutter_amplitude_rad: 0.36 * load + 0.45 * leaf_flutter,
+        abaxial_silver_flash_index: silver_flash_index,
+        damping_ratio: 0.18,
+        time_s: time_s
+    };
+}
+
+// Coastal drought & post-fire lignotuber / epicormic resprouting state machine (P50 = -3.4 MPa)
+pure fn step_lignotuber_epicormic_recovery(
+    fire_char_height: f64,
+    epicormic_sprout_factor: f64,
+    recovery_days: f64,
+    xylem_water_potential_mpa: f64
+) {
+    let char_norm = clamp01(fire_char_height);
+    let sprout = clamp01(epicormic_sprout_factor);
+    let cavitation_risk = xylem_water_potential_mpa <= -3.4;
+
+    let state = if char_norm < 0.08 && sprout < 0.05 {
+        "dormant_lignotuber_and_corky_bark_buds"
+    } else if recovery_days < 20.0 {
+        "post_fire_basal_lignotuber_activation"
+    } else if recovery_days < 180.0 {
+        "serrate_basal_coppice_and_epicormic_flush"
+    } else {
+        "headland_pseudowhorl_crown_recovery"
+    };
+
+    let basal_coppice_flush = if char_norm < 0.08 && sprout < 0.05 {
+        0.06
+    } else if recovery_days < 20.0 {
+        lerp(0.12, 0.48, recovery_days / 20.0)
+    } else if recovery_days < 180.0 {
+        lerp(0.48, 0.96, (recovery_days - 20.0) / 160.0)
+    } else {
+        lerp(0.92, 0.38, (recovery_days - 180.0) / 480.0)
+    };
+
+    let stem_epicormic_flush = if char_norm < 0.08 && sprout < 0.05 {
+        0.0
+    } else if recovery_days < 20.0 {
+        lerp(0.0, 0.25, recovery_days / 20.0) * (0.5 + 0.5 * sprout)
+    } else if recovery_days < 180.0 {
+        lerp(0.28, 0.90, (recovery_days - 20.0) / 160.0) * (0.5 + 0.5 * sprout)
+    } else {
+        lerp(0.85, 0.42, (recovery_days - 180.0) / 480.0)
+    };
+
+    return {
+        state: state,
+        basal_coppice_flush: basal_coppice_flush,
+        stem_epicormic_flush: stem_epicormic_flush,
+        xylem_cavitation_risk: cavitation_risk
+    };
+}
+
+// Subterranean Root-Order 0..4, Proteoid Carboxylate Exudate & Mycorrhizal EMF Pressure Coupling
+// Models how the wide dune root plate (r=5.5-7.5m, taproot -3.8m, 12 sinkers), proteoid mats (PO:0025531),
+// and mycelial rhizomorph network (0.1-50 Hz bio-electric EMF spikes + citrate/malate exudates)
+// govern coastal gale overturning resistance, salt/drought hydraulic lift, and post-fire carbon mobilization.
+pure fn evaluate_rhizosphere_pressure_coupling(
+    age_norm: f64,
+    site_vigor: f64,
+    wind_speed_ms: f64,
+    salt_wind_shear_bias: f64,
+    drought_stress: f64,
+    fire_char_height: f64,
+    phosphorus_limitation: f64
+) {
+    let a = clamp01(age_norm);
+    let vigor = clamp01(site_vigor);
+    let d_stress = clamp01(drought_stress);
+    let fire = clamp01(fire_char_height);
+    let p_lim = clamp01(phosphorus_limitation);
+    let wind_norm = clamp01(wind_speed_ms / 28.0);
+
+    let root_plate_radius_m = lerp(0.85, 7.35, clamp01(a / 0.72));
+    let taproot_depth_m = lerp(0.55, 3.80, clamp01(a / 0.65));
+
+    // Mechanical gale overturning resistance (kN*m) scaled to Order 1/2 lateral root plate + 12 sinkers
+    let overturning_resistance_knm = (18.0 + 145.0 * clamp01(a / 0.75)) * (0.65 + 0.35 * vigor);
+    let wind_overturning_torque_knm = 92.0 * wind_norm * wind_norm * (0.70 + 0.30 * clamp01(salt_wind_shear_bias));
+    let anchorage_safety_factor = overturning_resistance_knm / (wind_overturning_torque_knm + 1.0);
+
+    // Citrate / malate exudation from proteoid cluster root mats (umol / g_root / h) + P mobilization
+    let citrate_malate_exudation_umol_g_h = (4.5 + 16.5 * p_lim + 4.2 * d_stress) * (0.50 + 0.50 * vigor);
+    let phosphorus_solubilization_rate = 0.28 * citrate_malate_exudation_umol_g_h;
+
+    // Bio-electric rhizosphere action-potential EMF frequency (0.1 - 50.0 Hz) & amplitude (mV)
+    let bioelectric_action_potential_hz = 1.2 + 14.0 * p_lim + 18.5 * d_stress + 15.0 * fire;
+    let rhizosphere_emf_amplitude_mv = 18.0 + 46.0 * p_lim + 38.0 * d_stress + 32.0 * fire;
+
+    // Hydraulic lift from -3.8 m taproot & -1.8..-3.2 m sinkers redistributed along mycelial cords
+    let hydraulic_lift_l_per_day = (6.0 + 38.0 * d_stress) * clamp01(a / 0.45) * (0.60 + 0.40 * vigor);
+    let buffered_xylem_mpa = -1.65 - 1.35 * d_stress + 0.45 * clamp01(hydraulic_lift_l_per_day / 30.0);
+
+    // Mycorrhizal carbon flux & post-fire lignotuber + mycelial carbon mobilization (mg C / h)
+    let mycorrhizal_carbon_flux_mg_h = (22.0 + 48.0 * vigor) * (1.0 - 0.35 * d_stress) + 64.0 * fire;
+
+    return {
+        root_plate_radius_m: root_plate_radius_m,
+        taproot_depth_m: taproot_depth_m,
+        overturning_resistance_knm: overturning_resistance_knm,
+        wind_overturning_torque_knm: wind_overturning_torque_knm,
+        anchorage_safety_factor: anchorage_safety_factor,
+        citrate_malate_exudation_umol_g_h: citrate_malate_exudation_umol_g_h,
+        phosphorus_solubilization_rate: phosphorus_solubilization_rate,
+        bioelectric_action_potential_hz: bioelectric_action_potential_hz,
+        rhizosphere_emf_amplitude_mv: rhizosphere_emf_amplitude_mv,
+        hydraulic_lift_l_per_day: hydraulic_lift_l_per_day,
+        buffered_xylem_mpa: buffered_xylem_mpa,
+        mycorrhizal_carbon_flux_mg_h: mycorrhizal_carbon_flux_mg_h
+    };
+}
+
+let default_instance_state64 = {
+    seed: 2026111808,
+    ontogenetic_age_norm: 0.68,
+    height_scale: 0.88,
+    site_vigor: 0.88,
+    salt_wind_shear_bias: 0.58,
+    drought_stress: 0.08,
+    fire_char_height: 0.06,
+    epicormic_sprout_factor: 0.22
+};
+
+let mature_ontogeny = evaluate_ontogeny(
+    default_instance_state64.ontogenetic_age_norm,
+    default_instance_state64.height_scale,
+    default_instance_state64.site_vigor,
+    default_instance_state64.salt_wind_shear_bias,
+    default_instance_state64.drought_stress
+);
+let autumn_anthesis = evaluate_autumn_winter_anthesis(125.0, default_instance_state64.ontogenetic_age_norm, default_instance_state64.site_vigor);
+let coastal_wind = evaluate_coastal_wind_harmonics(9.4, default_instance_state64.salt_wind_shear_bias, 1.25);
+let rhizosphere_coupling = evaluate_rhizosphere_pressure_coupling(
+    default_instance_state64.ontogenetic_age_norm,
+    default_instance_state64.site_vigor,
+    9.4,
+    default_instance_state64.salt_wind_shear_bias,
+    default_instance_state64.drought_stress,
+    default_instance_state64.fire_char_height,
+    0.72
+);
+let lignotuber_recovery = step_lignotuber_epicormic_recovery(
+    default_instance_state64.fire_char_height,
+    default_instance_state64.epicormic_sprout_factor,
+    95.0,
+    rhizosphere_coupling.buffered_xylem_mpa
+);
+
+let xpbd_tick = capability.invoke("hypermedia.kinetics.step_island_xpbd", {
+    bodies: [
+        { id: "taproot_deep_anchor", position: [0.0, -3.20, 0.0], velocity: [0.0, 0.0, 0.0], radius: 0.35, inv_mass: 0.0 },
+        { id: "lignotuber_anchor", position: [0.0, 0.12, 0.0], velocity: [0.0, 0.0, 0.0], radius: 1.02, inv_mass: 0.0 },
+        { id: "root_plate_sinker", position: [4.80, -0.85, 0.60], velocity: [0.0, 0.0, 0.0], radius: 0.25, inv_mass: 0.02 },
+        { id: "primary_bough_sway", position: [5.40, 10.10, -1.35], velocity: [coastal_wind.bough_amplitude_rad, 0.03, -0.09], radius: 0.10, inv_mass: 0.62 },
+        { id: "whorl_sprig_silver_flash", position: [6.20, 13.15, 1.35], velocity: [coastal_wind.leaf_flutter_amplitude_rad, -0.03, 0.14], radius: 0.65, inv_mass: 1.05 }
+    ],
+    area_override: {
+        bounds_min: [-10.0, -4.5, -10.0],
+        bounds_max: [10.0, 18.0, 10.0],
+        gravity: [0.0, -9.81, 0.0],
+        linear_damping: 0.18,
+        wind: [6.8, 0.4, -1.8]
+    },
+    dt: 0.015625,
+    steps: 4,
+    substeps: 4,
+    ground_y: -4.2
+});

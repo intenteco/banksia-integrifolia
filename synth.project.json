@@ -1,0 +1,12 @@
+{
+  "schema": "synth.project/v1",
+  "name": "banksia-integrifolia",
+  "brief": "Banksia integrifolia L.f. (Coast Banksia, Proteaceae) — South-Eastern Australian coastal dune & headland keystone flora ontology, proteoid/pipe-model allometric traits, InstanceState64 ontogeny, biocultural Country provenance, and Hypermedia (.hmc) production repository (Work-Packet ECO-WP-08A).",
+  "sources": [
+    "ontology",
+    "source",
+    "dossier"
+  ],
+  "working": "previews",
+  "delivered": "dist"
+}

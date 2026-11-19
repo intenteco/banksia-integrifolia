@@ -1,0 +1,41 @@
+{
+  "schema": "synth.jobs/v1",
+  "items": [
+    {
+      "id": "bint-taxon-ttl",
+      "kind": "compile",
+      "title": "Banksia integrifolia taxon Turtle -> .q42",
+      "source_path": "eco-intent/banksia-integrifolia/ontology/taxon.ttl",
+      "out_q42": "intenteco-bint-08a-taxon.q42",
+      "ingest_to_graph": false,
+      "interval_secs": 0,
+      "enabled": false,
+      "created_at": 1794987200,
+      "updated_at": 1794987288,
+      "next_run_at": 0,
+      "last_run_at": 1794987288,
+      "last_status": "ok",
+      "last_sha256": "c803943a74f62aa61b88eb57098edfc9ee441d12a83427802af62057451d8b06",
+      "last_q42": "dist/taxon.q42",
+      "run_count": 1
+    },
+    {
+      "id": "bint-index-ttl",
+      "kind": "compile",
+      "title": "Banksia integrifolia index Turtle -> .q42",
+      "source_path": "eco-intent/banksia-integrifolia/ontology/index.ttl",
+      "out_q42": "intenteco-bint-08a-index.q42",
+      "ingest_to_graph": false,
+      "interval_secs": 0,
+      "enabled": false,
+      "created_at": 1794987200,
+      "updated_at": 1794987289,
+      "next_run_at": 0,
+      "last_run_at": 1794987289,
+      "last_status": "ok",
+      "last_sha256": "fb9480bd92a725871ba4ff708725b91e67fd1c0dbe2e2369c6ac3d2992eee537",
+      "last_q42": "dist/index.q42",
+      "run_count": 1
+    }
+  ]
+}
